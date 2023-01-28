@@ -13,7 +13,25 @@
     <link href="css/estilo1.css" rel="stylesheet" type="text/css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+     <script languague="javascript">
+      function mostrar() {
+          div = document.getElementById('dive');
+          div.style.display = '';
+          div = document.getElementById('ocultar');
+          div.style.display = '';
+          div = document.getElementById('mostrar');
+          div.style.display = 'none';
+      }
 
+      function cerrar() {
+          div = document.getElementById('dive');
+          div.style.display = 'none';
+          div = document.getElementById('mostrar');
+          div.style.display = '';
+          div = document.getElementById('ocultar');
+          div.style.display = 'none';
+      }
+</script>
     <title>Gabriela & Juan José</title>
 </head>
 <body background="img/FONDO.png" >
@@ -198,8 +216,7 @@
       <!-- Acompañantes -->
       <div style="text-align: center; font-family: 'Great Vibes', cursive;">
         <img src="img/borde.png" alt="borde" width="auto" height="45px"  >
-        <h1 style="font-size: 3em;">Con la bendición de Dios<br>
-          y Nuestros Padres</h1>
+        <h1 style="font-size: 3em;">Con la bendición de Dios</h1>
       </div>
       <div style="text-align: center; font-family: 'Bodoni Moda', serif;
       margin-left: 10%;margin-right: 10%;">
@@ -220,6 +237,25 @@
         <p style="font-size: 1em">-Nuestra Madrina-</p><br>
       </div>
       <!-- Fin Acompañantes -->
+      <div style="text-align: center; font-family: 'Great Vibes', cursive;">
+        <img src="img/borde.png" alt="borde" width="auto" height="45px"  >
+      </div>
+      <!-- Regalos -->
+      <div style="text-align: center; background-color: #FFF;
+      margin-left: 10%;margin-right: 10%; border-radius: 5pt; padding: 10%;">
+      <h1 style="font-size: 3em;font-family: 'Great Vibes', cursive;">Regalos</h1>
+      <h3 style="font-size: 1em;font-family: 'Bodoni Moda', serif;">Nuestro mejor regalo es que estés con nosotros en nuestro día, pero,<br> 
+        si quieres hacernos un obsequio aquí esta nuestro número de cuenta:</h3><br>
+        <a href="javascript:mostrar();" id="mostrar"><img src="img/banco.png" alt="banco" width="auto" height="50px"  ></a>
+        <a href="javascript:cerrar();" id="ocultar" style="display: none;"><img src="img/banco.png" alt="banco" width="auto" height="50px"  ></a>
+      <div id="dive" style="text-align: center;border: 1pt solid black;margin-top: 5%;
+      margin-left: 5%;margin-right: 5%; border-radius: 5pt; padding: 5%; display: none;">
+      <p style="font-size: 1em;font-family: 'Bodoni Moda', serif;"><b>Banco: </b> BanBajio</p>
+      <p style="font-size: 1em;font-family: 'Bodoni Moda', serif;"><b>Titular: </b><br> Gabriela Tanaka Ruiz</p>
+      <p style="font-size: 1em;font-family: 'Bodoni Moda', serif;"><b>No. Cuenta: </b><br> 4210 0300 3757 2653</p>
+      </div>
+      </div>
+      <!-- Fin Regalos -->
       <div style="text-align: center; font-family: 'Great Vibes', cursive;">
         <img src="img/borde.png" alt="borde" width="auto" height="45px"  >
       </div>
